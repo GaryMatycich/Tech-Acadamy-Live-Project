@@ -4,6 +4,7 @@ The Final 2 weeks of my time with the Tech Academy were spent participating on a
 
 * [Model](#database-model)
 * [Views](#views)
+* [Partial View](#partial-view)
 
 ## Examples
 
