@@ -2,6 +2,9 @@
 ## Project Summary
 The Final 2 weeks of my time with the Tech Academy were spent participating on a live ongoing webdev project with other developers. We used Azure Devops to organize a sprint and distribute stories among a rotating group. I was tasked with working on a section of the website where blog authors were to be maintained and edited. My sprint started in backend database work creating models for Authors and building out there CRUD pages. Later I would work directly on view pages using cshtml and even builing partial views to display Author profiles. Below is some of the code I contributed to the Project.
 
+* [Model](#database-model)
+* [Views](#views)
+
 ## Examples
 
 ### Database model
