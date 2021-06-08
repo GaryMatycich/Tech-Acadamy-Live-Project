@@ -5,7 +5,8 @@ The Final 2 weeks of my time with the Tech Academy were spent participating on a
 * [Model](#database-model)
 * [Views](#views)
 * [Partial View](#partial-view)
-* [Helper tool](#helper-text-tool)
+* [Helper Tool](#helper-text-tool)
+* [More Lessons](#more-lessons)
 
 ## Examples
 
@@ -249,3 +250,9 @@ public class TextHelpers
         }
     }
 ```
+[back to top](#project-summary)
+
+## More Lessons
+
+Along side learning a lot with coding itself I gained a lot of invaluable knowlege about version control, agile/scrum, and working on existing code.
+Utilizing branches to try out ideas and keeping my code away from the master branch until it was ready gave me a sense of safty to make mistakes while looking for the best solution. Joining standups everyday with the team and descussing our daily task and recent successes/struggles helped bring the team closer and made our individual assignments feel more meaningful. Jumping into a already running web application made it pretty easy to begin work and contribute immediatly. Being able to reference style guides and layout let me worry about one less thing and focus on just writing code.
