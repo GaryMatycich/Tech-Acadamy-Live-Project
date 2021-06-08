@@ -5,6 +5,7 @@ The Final 2 weeks of my time with the Tech Academy were spent participating on a
 * [Model](#database-model)
 * [Views](#views)
 * [Partial View](#partial-view)
+* [Helper tool](#helper-text-tool)
 
 ## Examples
 
@@ -23,7 +24,7 @@ public class BlogAuthor
         public DateTime? Left { get; set; }
     }
 ```
-The database was using a code first approach and my table was drawn up from the class using Entity Framework
+The database was using a code first approach and my table was drawn up from the class using Entity Framework.
 ```
 CREATE TABLE [dbo].[BlogAuthors] (
     [BlogAuthorId] INT            IDENTITY (1, 1) NOT NULL,
@@ -201,7 +202,7 @@ The initial solution I had created used Javascript to control buttons on each pa
 </div>
 ```
 
-This is the index page that utilized each of my partial views
+This is the index page that utilized each of my partial views.
 ```
 @model IEnumerable<TheatreCMS3.Areas.Blog.Models.BlogAuthor>
 @using TheatreCMS3.Areas.Blog.Models;
@@ -219,4 +220,32 @@ This is the index page that utilized each of my partial views
     @Html.Partial("_BlogAuthor", (BlogAuthor) item);
     <br />
 }
+```
+
+### Helper text tool
+A smaller story I worked on was a text tool that limited characters in a block of text and added an ellipses.
+
+```
+public class TextHelpers
+    {
+        public static string LimitCharacters(string targetText, int limit)
+        {
+            if (targetText.Length > limit)
+            {
+                // checks if string surpasses limit
+                targetText = targetText.Substring(0, limit);
+
+                // checks if the string ends in a space. If so it is removed.
+                string spaceCheck = targetText.Substring(targetText.Length - 1);
+                if (spaceCheck == " ")
+                {
+                    targetText = targetText.Remove(targetText.Length - 1, 1);
+                }
+                // concatinates an ellipses to the string
+                targetText = targetText + "...";
+            }
+
+            return targetText;
+        }
+    }
 ```
